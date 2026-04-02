@@ -6,7 +6,7 @@
 /*   By: fmesa-or <fmesa-or@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 20:59:04 by fmesa-or          #+#    #+#             */
-/*   Updated: 2024/08/05 14:28:01 by fmesa-or         ###   ########.fr       */
+/*   Updated: 2026/04/02 16:50:18 by fmesa-or         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,6 @@ void	ft_send_home_2(t_stack **a, t_stack **b, t_stack *cheaper)
 
 void	ft_send_home(t_stack **a, t_stack **b, t_stack *cheaper)
 {
-	t_stack	**tmp;
-
-	tmp = a;
 	while (cheaper->cost_a != 0 || cheaper->cost_b != 0)
 	{
 		if (cheaper->cost_a > 0 && cheaper->cost_b > 0)

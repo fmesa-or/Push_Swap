@@ -6,7 +6,7 @@
 /*   By: fmesa-or <fmesa-or@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 20:49:58 by fmesa-or          #+#    #+#             */
-/*   Updated: 2024/08/02 21:58:49 by fmesa-or         ###   ########.fr       */
+/*   Updated: 2026/04/02 16:54:21 by fmesa-or         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,28 +46,4 @@ void	ft_ss(t_stack **a, t_stack **b, int i)
 	ft_sb(b, 0);
 	if (i == 1)
 		write(1, "ss\n", 3);
-}
-
-	tmp = (*origin)->next;
-	(*origin)->next = *dest;
-	*dest = *origin;
-	*origin = tmp;
-}
-
-void	ft_pa(t_stack **a, t_stack **b, int i)
-{
-	if (!*b)
-		return ;
-	ft_push(b, a);
-	if (i == 1)
-		write (1, "pa\n", 3);
-}
-
-void	ft_pb(t_stack **a, t_stack **b, int i)
-{
-	if (!*a)
-		return ;
-	ft_push(a, b);
-	if (i == 1)
-		write (1, "pb\n", 3);
 }
